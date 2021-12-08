@@ -34,31 +34,30 @@
         <form name = "forma">
             <mi-nav></mi-nav>
             <h1>Sesión Activa</h1>
-            <div style="text-align: center;">
+            <div>
                 <figure>
-                    <img id="avatar" src="" alt="Avatar">
+                  <img id="avatar" src=""
+                    alt="Avatar">
                 </figure>
-                <p class>
-                    <label>
-                        Email: 
-                        <output name="email"></output>
-                            <mi-progreso></mi-progreso>
-                        </output>
-                    </label>
+                <p>
+                  <label>
+                    Email
+                    <output name="email">
+                      <mi-progreso>
+                      </mi-progreso>
+                    </output>
+                  </label>
                 </p>
                 <p>
-                    <label>
-                        Nombre: 
-                        <output name="nombre">
-                            <mi-progreso></mi-progreso>
-                        </output>
-                    </label>
+                  <label>
+                    Nombre
+                    <output name="nombre">
+                      <mi-progreso>
+                      </mi-progreso>
+                    </output>
+                  </label>
                 </p>
-                <div class="form-sesion">
-                    <button type="button" name="terminarSesión">Cerrar Sesión</button>
-                </div>
-            </div>
-        </form>
+                </form>
         <script type="module" src="js/CtrlSesion.js"></script>
         <mi-footer></mi-footer>
 </body>
