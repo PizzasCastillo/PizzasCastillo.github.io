@@ -119,3 +119,18 @@
       padding-top: 2em;
       margin-left: 2em;
   }
+
+legend,
+p label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+p label>* {
+  display: block;
+  font-weight: normal;
+  font-size: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}
