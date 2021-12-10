@@ -4,7 +4,12 @@
  */
 
 /**
- * @typedef {Object} Alumno
+ * @typedef {Object} Menu
+ * @property {string} nombre
+ */
+
+/**
+ * @typedef {Object} Sucursal
  * @property {string} nombre
  */
 
@@ -16,7 +21,7 @@
 
 // @ts-nocheck
 /**
- * @typedef {Object} Mensaje
+ * @typedef {Object} Comentario
  * @property {string} usuarioId
  * @property {string} texto
  * @property {firebase.firestore.Timestamp} timestamp
