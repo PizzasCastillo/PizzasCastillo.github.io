@@ -4,7 +4,7 @@ import { cod, getString, muestraError } from "../lib/util.js"
 
 import { tieneRol } from "./seguridad.js"
 
-const daoComentarios = getFirestore().collection("Comentarios");
+const daoComentarios = getFirestore().collection("Comentario");
 
 let usuarioId = "";
 /**@type {HTMLFormElement} */
@@ -36,7 +36,7 @@ async function agrega(evt) {
         // @ts-ignore
         const timestamp = firebase.firestore.FieldValue.serverTimestamp();
         /** @type {import(
-        "./tipos.js").Mensaje} */
+        "./tipos.js").Comentario} */
         const modelo = { usuarioId, texto, timestamp };
         await daoComentarios.add(modelo);
         forma.texto.value = "";
@@ -71,7 +71,7 @@ function htmlLista(snap) {
 /** @param {import("../lib/tiposFire.js").DocumentSnapshot} doc */
 function htmlFila(doc) {
     /**Recupera datos del doc
-     * @type {import("./tipos.js").Mensaje}*/
+     * @type {import("./tipos.js").Comentario}*/
     const data = doc.data();
     return ( /* html */
         `<li class="fila">
